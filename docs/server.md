@@ -1,4 +1,5 @@
-```[xdebug]
+```
+[xdebug]
 xdebug.default_enable = On; включить xdebug по умолчанию
 xdebug.var_display_max_depth = 20; глубина показа дампа массивов и объектов
 xdebug.remote_enable = On; включить удаленную отладку
