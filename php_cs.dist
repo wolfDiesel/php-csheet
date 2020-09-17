@@ -9,6 +9,8 @@ return PhpCsFixer\Config::create()
     ->setRules([
         '@PSR2' => true,
         'array_syntax' => ['syntax' => 'short'],
+        'align_multiline_comment' => true,
+        'align_double_arrow' => true,
         'blank_line_after_namespace' => true,
         'blank_line_before_return' => true,
         'linebreak_after_opening_tag' => true,
@@ -31,5 +33,10 @@ return PhpCsFixer\Config::create()
         'no_blank_lines_after_phpdoc' => true,
         'single_blank_line_at_eof' => true,
         'single_blank_line_before_namespace' => true,
+        'operators' => [
+          '===' => 'align_single_space_minimal',
+          '==' => 'align_single_space_minimal',
+          '=' => 'align_single_space_minimal'
+        ]
     ])
     ->setFinder($finder);
